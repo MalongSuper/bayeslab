@@ -1,0 +1,19 @@
+{
+  "name": "naive-bayes-learning-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n web,api -c cyan,green \"vite --host 0.0.0.0\" \".venv/bin/python -m uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000\"",
+    "build": "vite build",
+    "test:api": ".venv/bin/python -m unittest discover -s backend -p 'test_*.py'"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {}
+}
