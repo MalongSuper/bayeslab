@@ -1,0 +1,1503 @@
+[
+  {
+    "id": "fruit",
+    "name": "Fruit quality",
+    "description": "Estimate fruit quality from visible properties. Each row is one fruit inspection.",
+    "features": [
+      {
+        "key": "skin_color",
+        "label": "Skin color",
+        "categories": [
+          "golden",
+          "yellow",
+          "green"
+        ]
+      },
+      {
+        "key": "firmness",
+        "label": "Firmness",
+        "categories": [
+          "firm",
+          "medium",
+          "soft"
+        ]
+      },
+      {
+        "key": "size_group",
+        "label": "Size group",
+        "categories": [
+          "large",
+          "medium",
+          "small"
+        ]
+      },
+      {
+        "key": "blemish_level",
+        "label": "Blemish level",
+        "categories": [
+          "none",
+          "few",
+          "many"
+        ]
+      },
+      {
+        "key": "sugar_level",
+        "label": "Sugar level",
+        "categories": [
+          "high",
+          "medium",
+          "low"
+        ]
+      }
+    ],
+    "target": "quality_grade",
+    "split": "set_name",
+    "classes": [
+      "grade_a",
+      "grade_b"
+    ],
+    "rows": [
+      {
+        "skin_color": "golden",
+        "firmness": "firm",
+        "size_group": "large",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "firm",
+        "size_group": "medium",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "medium",
+        "size_group": "large",
+        "blemish_level": "few",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "firm",
+        "size_group": "large",
+        "blemish_level": "few",
+        "sugar_level": "medium",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "firm",
+        "size_group": "medium",
+        "blemish_level": "few",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "large",
+        "blemish_level": "none",
+        "sugar_level": "medium",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "firm",
+        "size_group": "small",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "firm",
+        "size_group": "medium",
+        "blemish_level": "few",
+        "sugar_level": "medium",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "medium",
+        "size_group": "medium",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "firm",
+        "size_group": "large",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "firm",
+        "size_group": "large",
+        "blemish_level": "few",
+        "sugar_level": "medium",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "medium",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "soft",
+        "size_group": "small",
+        "blemish_level": "many",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "medium",
+        "size_group": "small",
+        "blemish_level": "few",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "soft",
+        "size_group": "medium",
+        "blemish_level": "many",
+        "sugar_level": "medium",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "soft",
+        "size_group": "medium",
+        "blemish_level": "few",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "small",
+        "blemish_level": "many",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "firm",
+        "size_group": "small",
+        "blemish_level": "few",
+        "sugar_level": "medium",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "soft",
+        "size_group": "small",
+        "blemish_level": "few",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "medium",
+        "size_group": "medium",
+        "blemish_level": "many",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "soft",
+        "size_group": "large",
+        "blemish_level": "many",
+        "sugar_level": "medium",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "soft",
+        "size_group": "small",
+        "blemish_level": "none",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "medium",
+        "blemish_level": "many",
+        "sugar_level": "medium",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "medium",
+        "size_group": "large",
+        "blemish_level": "few",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "train"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "firm",
+        "size_group": "large",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "firm",
+        "size_group": "medium",
+        "blemish_level": "few",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "golden",
+        "firmness": "medium",
+        "size_group": "small",
+        "blemish_level": "none",
+        "sugar_level": "high",
+        "quality_grade": "grade_a",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "large",
+        "blemish_level": "none",
+        "sugar_level": "medium",
+        "quality_grade": "grade_a",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "soft",
+        "size_group": "small",
+        "blemish_level": "many",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "soft",
+        "size_group": "medium",
+        "blemish_level": "many",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "green",
+        "firmness": "medium",
+        "size_group": "large",
+        "blemish_level": "few",
+        "sugar_level": "low",
+        "quality_grade": "grade_b",
+        "set_name": "test"
+      },
+      {
+        "skin_color": "yellow",
+        "firmness": "medium",
+        "size_group": "small",
+        "blemish_level": "many",
+        "sugar_level": "medium",
+        "quality_grade": "grade_b",
+        "set_name": "test"
+      }
+    ]
+  },
+  {
+    "id": "delivery",
+    "name": "Delivery delays",
+    "description": "Predict whether a delivery route arrives on time or late.",
+    "features": [
+      {
+        "key": "weather",
+        "label": "Weather",
+        "categories": [
+          "rain",
+          "fog",
+          "clear"
+        ]
+      },
+      {
+        "key": "traffic",
+        "label": "Traffic",
+        "categories": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      {
+        "key": "distance_band",
+        "label": "Distance band",
+        "categories": [
+          "long",
+          "medium",
+          "short"
+        ]
+      },
+      {
+        "key": "vehicle_type",
+        "label": "Vehicle type",
+        "categories": [
+          "van",
+          "bike",
+          "truck"
+        ]
+      },
+      {
+        "key": "service_level",
+        "label": "Service level",
+        "categories": [
+          "regular",
+          "express"
+        ]
+      },
+      {
+        "key": "day_type",
+        "label": "Day type",
+        "categories": [
+          "weekday",
+          "weekend"
+        ]
+      }
+    ],
+    "target": "delivery_status",
+    "split": "partition",
+    "classes": [
+      "late",
+      "on_time"
+    ],
+    "rows": [
+      {
+        "weather": "rain",
+        "traffic": "high",
+        "distance_band": "long",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "high",
+        "distance_band": "medium",
+        "vehicle_type": "bike",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "medium",
+        "distance_band": "long",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "medium",
+        "distance_band": "long",
+        "vehicle_type": "truck",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "high",
+        "distance_band": "long",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "high",
+        "distance_band": "medium",
+        "vehicle_type": "bike",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "low",
+        "distance_band": "long",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "medium",
+        "distance_band": "long",
+        "vehicle_type": "bike",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "high",
+        "distance_band": "long",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "medium",
+        "distance_band": "medium",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "bike",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "low",
+        "distance_band": "medium",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "medium",
+        "distance_band": "short",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "bike",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "low",
+        "distance_band": "long",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "medium",
+        "distance_band": "medium",
+        "vehicle_type": "truck",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "medium",
+        "distance_band": "short",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "truck",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "medium",
+        "distance_band": "short",
+        "vehicle_type": "bike",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "low",
+        "distance_band": "medium",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "clear",
+        "traffic": "medium",
+        "distance_band": "short",
+        "vehicle_type": "bike",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "low",
+        "distance_band": "medium",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "fog",
+        "traffic": "medium",
+        "distance_band": "medium",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "train"
+      },
+      {
+        "weather": "rain",
+        "traffic": "high",
+        "distance_band": "long",
+        "vehicle_type": "truck",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "test"
+      },
+      {
+        "weather": "fog",
+        "traffic": "high",
+        "distance_band": "medium",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "test"
+      },
+      {
+        "weather": "clear",
+        "traffic": "high",
+        "distance_band": "long",
+        "vehicle_type": "bike",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "late",
+        "partition": "test"
+      },
+      {
+        "weather": "rain",
+        "traffic": "medium",
+        "distance_band": "long",
+        "vehicle_type": "van",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "late",
+        "partition": "test"
+      },
+      {
+        "weather": "clear",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "test"
+      },
+      {
+        "weather": "fog",
+        "traffic": "low",
+        "distance_band": "medium",
+        "vehicle_type": "bike",
+        "service_level": "express",
+        "day_type": "weekday",
+        "delivery_status": "on_time",
+        "partition": "test"
+      },
+      {
+        "weather": "rain",
+        "traffic": "low",
+        "distance_band": "short",
+        "vehicle_type": "truck",
+        "service_level": "express",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "test"
+      },
+      {
+        "weather": "clear",
+        "traffic": "medium",
+        "distance_band": "medium",
+        "vehicle_type": "van",
+        "service_level": "regular",
+        "day_type": "weekend",
+        "delivery_status": "on_time",
+        "partition": "test"
+      }
+    ]
+  },
+  {
+    "id": "machine",
+    "name": "Machine faults",
+    "description": "Classify a machine inspection as normal or fault from sensor indicators.",
+    "features": [
+      {
+        "key": "high_temperature",
+        "label": "High temperature",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "strong_vibration",
+        "label": "Strong vibration",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "low_pressure",
+        "label": "Low pressure",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "low_oil_level",
+        "label": "Low oil level",
+        "categories": [
+          0,
+          1
+        ]
+      },
+      {
+        "key": "warning_light_on",
+        "label": "Warning light on",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "unusual_noise",
+        "label": "Unusual noise",
+        "categories": [
+          1,
+          0
+        ]
+      }
+    ],
+    "target": "label",
+    "split": "split",
+    "classes": [
+      "fault",
+      "normal"
+    ],
+    "rows": [
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "fault",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 1,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "train"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "test"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "fault",
+        "split": "test"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 1,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "test"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 1,
+        "label": "fault",
+        "split": "test"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "test"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 1,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "test"
+      },
+      {
+        "high_temperature": 1,
+        "strong_vibration": 0,
+        "low_pressure": 0,
+        "low_oil_level": 0,
+        "warning_light_on": 1,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "test"
+      },
+      {
+        "high_temperature": 0,
+        "strong_vibration": 0,
+        "low_pressure": 1,
+        "low_oil_level": 1,
+        "warning_light_on": 0,
+        "unusual_noise": 0,
+        "label": "normal",
+        "split": "test"
+      }
+    ]
+  },
+  {
+    "id": "network",
+    "name": "Network access",
+    "description": "Screen network access records as legitimate or intrusion using binary signals.",
+    "features": [
+      {
+        "key": "failed_logins",
+        "label": "Failed logins",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "unusual_port",
+        "label": "Unusual port",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "large_transfer",
+        "label": "Large transfer",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "new_device",
+        "label": "New device",
+        "categories": [
+          0,
+          1
+        ]
+      },
+      {
+        "key": "encrypted_payload",
+        "label": "Encrypted payload",
+        "categories": [
+          1,
+          0
+        ]
+      },
+      {
+        "key": "off_hours",
+        "label": "Off-hours activity",
+        "categories": [
+          1,
+          0
+        ]
+      }
+    ],
+    "target": "access_type",
+    "split": "subset",
+    "classes": [
+      "intrusion",
+      "legitimate"
+    ],
+    "rows": [
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 0,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 0,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 0,
+        "access_type": "intrusion",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "train"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 1,
+        "encrypted_payload": 1,
+        "off_hours": 0,
+        "access_type": "intrusion",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 1,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "intrusion",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 0,
+        "large_transfer": 1,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 1,
+        "access_type": "legitimate",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 1,
+        "unusual_port": 0,
+        "large_transfer": 0,
+        "new_device": 1,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "test"
+      },
+      {
+        "failed_logins": 0,
+        "unusual_port": 1,
+        "large_transfer": 0,
+        "new_device": 0,
+        "encrypted_payload": 0,
+        "off_hours": 0,
+        "access_type": "legitimate",
+        "subset": "test"
+      }
+    ]
+  }
+]
